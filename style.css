@@ -17,10 +17,10 @@ html {
   background-size: cover; /* Esto hace que la imagen de fondo cubra todo el header */
   position: relative; /* Esto permite posicionar el navbar respecto al header */
   color: #fff; /* Cambia el color del texto de los links a blanco */
-  text-decoration: none !important;
+  text-decoration: none ;
 }
-d a {
-  text-decoration: none a; /* Elimina el subrayado de los links */
+ a{
+  text-decoration: none !important; /* Elimina el subrayado de los links */
   color: #050400; /* Cambia el color del texto de los links a dorado cuando se pasa el mouse por encima */
 }
 .navbar-image {
@@ -58,7 +58,7 @@ d a {
   justify-content: flex-start;
   padding: 20px;
   box-sizing: border-box;
-  color: #fff;
+  color: #b62929;
   font-size: 1.2em;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -363,12 +363,13 @@ d a {
 }
 
 .navbar {
-  background: rgb(2, 0, 36);
+  width: 82.1%;
+  background: rgba(247, 182, 6, 0);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.548) 0%,
+    rgba(46, 3, 39, 0.993) 0%,
     rgba(255, 182, 242, 1) 35%,
-    rgba(250, 209, 118, 1) 79%,
-    rgba(201, 159, 68, 0.902) 100%
+    rgba(250, 208, 118, 0.747) 79%,
+    rgba(211, 165, 65, 0.904) 1000%
   );
 }
