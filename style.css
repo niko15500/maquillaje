@@ -1,0 +1,633 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-image: url(./img/shutterstock_1724501341.jpg);
+  height: 100vh; /* Esto crea un header que ocupa todo el alto de la pantalla */
+  background-size: cover; /* Esto hace que la imagen de fondo cubra todo el header */
+  position: relative; /* Esto permite posicionar el navbar respecto al header */
+  color: #fff !important; /* Cambia el color del texto de los links a blanco */
+  text-decoration: none !important;
+}
+d
+a {
+  text-decoration: none !important; /* Elimina el subrayado de los links */
+  color: #050400 !important; /* Cambia el color del texto de los links a dorado cuando se pasa el mouse por encima */
+}
+.navbar-image {
+  content: "";
+  position: fixed;
+  top: 0; /* Cambia 'bottom' por 'top' */
+  left: 0;
+  right: 0px;
+  top: -320px;
+  width: 47% !important; /* Cambia '900px' por '100%' para que la imagen ocupe todo el ancho del navbar */
+  height: 50%; /* Cambia '120px' por '100%' para que la imagen ocupe todo el alto del navbar */
+  background-image: url("./img/navbar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  z-index: -1; /* Esto coloca la imagen debajo del navbar */
+  opacity: 0.28;
+  filter: blur(1px); /* Ajusta el valor para el efecto de desenfoque */
+}
+@media (max-width: 2557px) {
+  .navbar-image {
+    width: 50% !important; /* Ajusta estos valores según sea necesario */
+    height: 46%;
+  }
+}
+@media (max-width: 2180px) {
+  .navbar-image {
+    width: 60% !important; /* Ajusta estos valores según sea necesario */
+    height: 45%;
+  }
+}
+@media (max-width: 1789px) {
+  .navbar-image {
+    width: 70% !important; /* Ajusta estos valores según sea necesario */
+    height: 45%;
+  }
+}
+@media (max-width: 1541px) {
+  .navbar-image {
+    width: 80% !important; /* Ajusta estos valores según sea necesario */
+    height: 45%;
+  }
+}
+@media (max-width: 1350px) {
+  .navbar-image {
+    width: 90% !important; /* Ajusta estos valores según sea necesario */
+    height: 45%;
+  }
+}
+@media (max-width: 1203px) {
+  .navbar-image {
+    width: 100% !important; /* Ajusta estos valores según sea necesario */
+    height: 45%;
+  }
+}
+@media (max-width: 880px) {
+  .navbar-image {
+    width: 90% !important; /* Ajusta estos valores según sea necesario */
+    height: 45%;
+  }
+}
+.navbar {
+  /*     background-image: url("/img/navbar.png");
+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px !important;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.m {
+  color: #ff139d !important;
+  font-weight: 1000 !important;
+  padding: 50px;
+}
+
+.navbar a {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/* Para pantallas de hasta 2439px de ancho */
+@media (max-width: 2439px) {
+  .navbar a {
+    font-size: 1.6em;
+  }
+}
+
+/* Para pantallas de hasta 1900px de ancho */
+@media (max-width: 1900px) {
+  .navbar a {
+    font-size: 1.5em;
+  }
+}
+
+/* Para pantallas de hasta 1366px de ancho */
+@media (max-width: 1366px) {
+  .navbar a {
+    font-size: 1.4em;
+  }
+}
+
+/* Para pantallas de hasta 1024px de ancho */
+@media (max-width: 1024px) {
+  .navbar a {
+    font-size: 1.2em;
+  }
+}
+
+/* Para pantallas de hasta 768px de ancho */
+/* @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+} */
+
+/* Para pantallas de hasta 576px de ancho */
+/* @media (max-width: 576px) {
+    .navbar a {
+        font-size: 0.8em;
+    }
+} */
+/* Si deseas que los elementos del navbar cambien cuando pasas el cursor sobre ellos */
+.navbar .menu {
+  display: flex;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.text-box {
+    
+  position: absolute;
+  left: 4.4%;
+  bottom: 250px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.021);
+  color: #fff;
+  height: 54%;
+  width: 750px; /* Este es un ancho fijo. Puedes ajustarlo a tu gusto. */
+  max-width: 80%; /* Esto permitirá que la caja de texto se ajuste a pantallas más pequeñas */
+}
+
+.text-box h1 {
+  font-size: 4.5em ;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+@media (max-width: 880px) {
+  .text-box h1 {
+    font-size:4.5rem ;
+  }
+}
+.text-box p {
+  font-size: 1.2em;
+}
+
+.contact-icons {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.title {
+  font-size: 40px;
+  color: rgb(230, 88, 154);
+  font-weight: 1000 ;
+  margin-bottom: 40px;
+}
+.text-box h1 {
+  letter-spacing: 0.6em; /* Espaciado para PROMAKEUP */
+  color: rgb(225, 249, 250);
+}
+
+.text-box .title {
+  letter-spacing: 0.5em; /* Espaciado mayor para STUDIO */
+}
+.btn {
+  color: rgb(15, 15, 15) !important;
+  background-color: rgb(230, 88, 154) !important;
+  margin: 0px;
+  position: absolute;
+}
+
+/* En pantallas de 800px o menos */
+@media (max-width: 900px) {
+  /* Muestra el botón hamburguesa */
+  .menu {
+    font-size: 1rem !important;
+    font-weight: 550 !;
+  }
+}
+@media (max-width: 883px) {
+  /* Muestra el botón hamburguesa */
+  .menu {
+    font-size: 20px ;
+    font-weight: 550 ;
+  }
+  .navbar-image {
+    width: 99% !important; /* Ajusta estos valores según sea necesario */
+    height: 46%;
+  }
+}
+@media (max-width: 818px) {
+  /* Muestra el botón hamburguesa */
+  .menu {
+    font-size: 17px ;
+    font-weight: 550 ;
+  }
+  .navbar-image {
+    width: 99% ; /* Ajusta estos valores según sea necesario */
+    height: 46%;
+  }
+}
+@media (max-width: 811px) {
+  /* Muestra el botón hamburguesa */
+  .menu {
+    font-size: 17px !important;
+    font-weight: 650 !important;
+  }
+  .navbar-image {
+    width: 99% !important; /* Ajusta estos valores según sea necesario */
+    height: 46%;
+  }
+}
+@media (max-width: 774px) {
+  /* Muestra el botón hamburguesa */
+  .menu {
+    font-size: 17px !important;
+    font-weight: 650 !important;
+  }
+  .navbar-image {
+    width: 99% !important; /* Ajusta estos valores según sea necesario */
+    height: 46%;
+  }
+}
+@media (max-width: 737px) {
+  /* Muestra el botón hamburguesa */
+  .menu {
+    padding: 0px 1px !important;
+    font-size: 17px !important;
+    font-weight: 650 !important;
+  }
+  .navbar-image {
+    width: 99% !important; /* Ajusta estos valores según sea necesario */
+    height: 46%;
+  }
+  .navbar .menu {
+    display: flex;
+    gap: 7px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 726px) {
+  /* Muestra el botón hamburguesa */
+  .menu {
+    padding: 0px 1px !important;
+    font-size: 16px !important;
+    font-weight: 650 !important;
+  }
+  .navbar-image {
+    width: 99% !important; /* Ajusta estos valores según sea necesario */
+    height: 46%;
+  }
+  .navbar .menu {
+    display: flex;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 694px) {
+  /* Muestra el botón hamburguesa */
+  .menu {
+    padding: 0px 1px !important;
+    font-size: 17px !important;
+    font-weight: 650 !important;
+  }
+  .navbar-image {
+    width: 99% !important; /* Ajusta estos valores según sea necesario */
+    height: 46%;
+  }
+  .navbar .menu {
+    display: flex;
+    gap: 1px !important;
+    display: flex;
+    align-items: center;
+  }
+  .item {
+    padding: 0px 15px !important;
+  }
+}
+@media (max-width: 654px) {
+  /* Muestra el botón hamburguesa */
+  .menu {
+    padding: 0px 1px !important;
+    font-size: 15px !important;
+    font-weight: 650 !important;
+  }
+  .navbar-image {
+    width: 99% !important; /* Ajusta estos valores según sea necesario */
+    height: 46%;
+  }
+  .navbar .menu {
+    display: flex;
+    gap: 1px !important;
+    display: flex;
+    align-items: center;
+  }
+  .item {
+    padding: 0px 15px !important;
+    font-size: 22px !important;
+  }
+  .text-box {
+    font-size: 20px !important;
+    padding: 0px !important;
+  }
+  .title-h2 {
+    font-size: 3.5em;
+    padding: 0px !important;
+  }
+  .title-h1 {
+    padding: 0px !important;
+    font-size: 10px !important;
+  }
+  .text-box {
+    position: absolute;
+    left: 4.4%;
+    bottom: 250px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.021);
+    color: #fff;
+    width: 890px; /* Este es un ancho fijo. Puedes ajustarlo a tu gusto. */
+    max-width: 90%; /* Esto permitirá que la caja de texto se ajuste a pantallas más pequeñas */
+  }
+
+  .text-box h1 {
+    font-size: 3.5em;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  .navbar a {
+    font-size: 1.1rem !important;
+  }
+}
+
+
+.navbar{
+    background-color: #050400;
+}
+
+@media (max-width: 436px) {
+    .text-box{ 
+     font-size: 0.6rem;
+    }
+    .navbar-image{
+        width: 20% !important;
+        height: 5% !important;
+    }
+}
+@media (max-width: 570px) {
+    /* Muestra el botón hamburguesa */
+    .menu {
+      padding: 0px 1px !important;
+      font-size: 15px !important;
+      font-weight: 650 !important;
+    }
+    .navbar-image {
+      width: 96% !important; /* Ajusta estos valores según sea necesario */
+      height: 46%;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 1px !important;
+      display: flex;
+      align-items: center;
+    }
+    .item {
+      padding: 0px 15px !important;
+      font-size: 22px !important;
+    }
+    #t2{
+        font-size: 25px !important;
+    }
+    .text-box {
+      font-size: 10px !important;
+      padding: 0px !important;
+    }
+    .title-h2 {
+      font-size: 15px !important;
+      padding: 0px !important;
+    }
+    .title-h1 {
+      padding: 0px !important;
+      font-size: 25px !important;
+    }
+    .text-box {
+      position: absolute;
+      left: 4.4%;
+      bottom: 250px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.021);
+      color: #fff;
+      width: 800px; /* Este es un ancho fijo. Puedes ajustarlo a tu gusto. */
+      max-width: 94%; /* Esto permitirá que la caja de texto se ajuste a pantallas más pequeñas */
+    }
+  
+    .text-box  {
+      font-size: 1rem !important;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+    }
+    .navbar a {
+      font-size: 1.1rem !important;
+    }
+    .hamburguesa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Agrega más estilos según sea necesario */
+      }
+      
+      /* Estilo para el menú */
+      .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Estilo para los ítems de menú */
+      .menu li {
+        list-style: none;
+        /* Agrega más estilos según sea necesario */
+      }
+      
+      .menu li a {
+        text-decoration: none;
+        /* Agrega más estilos según sea necesario */
+      }
+  }
+  
+  
+  .navbar{
+      background-color: #050400;
+  }
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Puedes ajustar este valor para aumentar o disminuir el espacio entre los íconos */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el contenedor de los iconos en la página */
+  }
+  
+  
+  .icono img {
+    width: 50px; /* Reduce el tamaño de los iconos en las pantallas grandes */
+    height: auto;
+  }
+.icono {
+    margin-right: 5px !important; /* Puedes ajustar este valor para aumentar o disminuir el espacio entre los íconos */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .icono img {
+      width: 40px; /* Aumenta el tamaño de los iconos en las pantallas pequeñas */
+    }
+    .text-box{ 
+      font-size: 0.7rem ;
+    }
+  }
+  @media (max-width: 768px) {
+    .icono img {
+      width: 40px; /* Aumenta el tamaño de los iconos en las pantallas pequeñas */
+    }
+    .text-box{ 
+      font-size: 0.7rem ;
+      padding-top: 20px; /* Ajusta este valor a tu necesidad */
+    }
+       
+    .p{
+        font-size: 1rem !important;
+    }
+  @media (max-width: 653px) {
+    .icono img {
+      width: 40px; /* Aumenta el tamaño de los iconos en las pantallas pequeñas */
+    }
+    .text-box{ 
+      font-size: 0.7rem ;
+    }
+  }
+  @media (max-width: 768px) {
+    .icono img {
+      width: 40px; /* Aumenta el tamaño de los iconos en las pantallas pequeñas */
+    }
+    .text-box{ 
+      font-size: 0.1rem ;
+      padding-top: 20px; /* Ajusta este valor a tu necesidad */
+    }
+    .btn{
+        padding: 4px !important;
+        margin: 0px !important;
+    }
+    .p{
+        margin: 0px;
+    }
+  }
+  
+
+  @media (max-width: 440px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+    .navbar-image {
+        width: 100% !important; 
+        height: auto !important; 
+    }
+
+    .text-box{
+        font-size: 0.6rem;
+        width: 80%;
+        left: 10%;
+        bottom: 10px;
+    }
+    .text-box h1 {
+        font-size: 1.5em;
+    }
+    .text-box p {
+        font-size: 1em;
+    }
+    .menu {
+        font-size: 15px !important;
+        font-weight: 650 !important;
+        flex-direction: column;
+    }
+    .item {
+        padding: 0px 15px !important;
+        font-size: 22px !important;
+    }
+    #t2{
+        font-size: 25px !important;
+    }
+    .text-box {
+        font-size: 10px !important;
+        padding: 0px !important;
+        top: 40px;
+    }
+    .title-h2 {
+        font-size: 15px !important;
+        padding: 0px !important;
+    }
+    .title-h1 {
+        padding: 0px !important;
+        font-size: 25px !important;
+    }
+    .text-box h1 {
+        font-size: 3.5em;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+    }
+    .navbar a {
+        font-size: 1.1rem !important;
+    }
+} }
+
+  
