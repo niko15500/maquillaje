@@ -289,7 +289,7 @@ html {
   }
   .navbar-image {
     height: 75%;
-    width: 100%;
+    width: 100% ;
   }
   .btn{
    top: 0.8rem;
@@ -297,19 +297,32 @@ html {
    padding: 0rem;
    position: relative;
   }
+  .navbar{
+    width: 100% !important;
+  }
 }
+
+
+@media (max-width: 1580px) {
+  .navbar{
+    width: 100% !important;
+  }
+}
+
+
+
 .p {
   font-size: 20px !important;
 }
 @media (max-width: 2500px) and (min-height: 850px) {
   .navbar-image {
-    height: 41%;
+    height: 42%;
     width: 98%;
   }
 }
-@media (max-width: 2020px) and (max-height: 1000px) {
+@media (max-width: 1350px) and (min-height: 768px) {
   .navbar-image {
-    height: 42% ;
+    height: 48% ;
     width: 90% ;
   }
 }
