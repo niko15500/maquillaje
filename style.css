@@ -34,7 +34,7 @@ a {
   top: 0; /* Cambia 'bottom' por 'top' */
   left: 0;
   right: 0px;
-  top: -320px;
+  top: -290px;
   width: 47% !important; /* Cambia '900px' por '100%' para que la imagen ocupe todo el ancho del navbar */
   height: 50%; /* Cambia '120px' por '100%' para que la imagen ocupe todo el alto del navbar */
   background-image: url("./img/navbar.png");
@@ -43,7 +43,7 @@ a {
   background-position: left top;
   z-index: -1; /* Esto coloca la imagen debajo del navbar */
   opacity: 0.28;
-  filter: blur(1px); /* Ajusta el valor para el efecto de desenfoque */
+  filter: blur(0.1px ) !important; /* Ajusta el valor para el efecto de desenfoque */
 }
 @media (max-width: 2557px) {
   .navbar-image {
@@ -53,31 +53,43 @@ a {
 }
 @media (max-width: 2180px) {
   .navbar-image {
-    width: 60% !important; /* Ajusta estos valores según sea necesario */
-    height: 45%;
+    width: 65% !important; /* Ajusta estos valores según sea necesario */
+    height: 36%;
   }
 }
 @media (max-width: 1789px) {
   .navbar-image {
     width: 70% !important; /* Ajusta estos valores según sea necesario */
-    height: 45%;
+    height: 36%;
   }
 }
-@media (max-width: 1541px) {
+@media (max-width: 1624px) {
   .navbar-image {
-    width: 80% !important; /* Ajusta estos valores según sea necesario */
+    width: 75% !important; /* Ajusta estos valores según sea necesario */
+    height: 35%;
+  }
+}
+@media (max-width: 1511px) {
+  .navbar-image {
+    width: 75% !important; /* Ajusta estos valores según sea necesario */
     height: 45%;
   }
 }
 @media (max-width: 1350px) {
   .navbar-image {
-    width: 90% !important; /* Ajusta estos valores según sea necesario */
-    height: 45%;
+    width: 95% !important; /* Ajusta estos valores según sea necesario */
+    height: 35%;
   }
 }
 @media (max-width: 1203px) {
   .navbar-image {
     width: 100% !important; /* Ajusta estos valores según sea necesario */
+    height: 45%;
+  }
+}
+@media (max-width: 1037px) {
+  .navbar-image {
+    width: 97% !important; /* Ajusta estos valores según sea necesario */
     height: 45%;
   }
 }
@@ -239,8 +251,7 @@ a {
 @media (max-width: 900px) {
   /* Muestra el botón hamburguesa */
   .menu {
-    font-size: 1rem !important;
-    font-weight: 550 !;
+    
   }
 }
 @media (max-width: 883px) {
@@ -250,8 +261,7 @@ a {
     font-weight: 550 ;
   }
   .navbar-image {
-    width: 99% !important; /* Ajusta estos valores según sea necesario */
-    height: 46%;
+    height: 43%;
   }
 }
 @media (max-width: 818px) {
@@ -262,7 +272,7 @@ a {
   }
   .navbar-image {
     width: 99% ; /* Ajusta estos valores según sea necesario */
-    height: 46%;
+    height: 43%;
   }
 }
 @media (max-width: 811px) {
@@ -273,7 +283,7 @@ a {
   }
   .navbar-image {
     width: 99% !important; /* Ajusta estos valores según sea necesario */
-    height: 46%;
+    height: 43%;
   }
 }
 @media (max-width: 774px) {
@@ -284,7 +294,7 @@ a {
   }
   .navbar-image {
     width: 99% !important; /* Ajusta estos valores según sea necesario */
-    height: 46%;
+    height: 43%;
   }
 }
 @media (max-width: 737px) {
@@ -296,7 +306,7 @@ a {
   }
   .navbar-image {
     width: 99% !important; /* Ajusta estos valores según sea necesario */
-    height: 46%;
+    height: 43%;
   }
   .navbar .menu {
     display: flex;
@@ -314,7 +324,7 @@ a {
   }
   .navbar-image {
     width: 99% !important; /* Ajusta estos valores según sea necesario */
-    height: 46%;
+    height: 43%;
   }
   .navbar .menu {
     display: flex;
@@ -332,14 +342,20 @@ a {
   }
   .navbar-image {
     width: 99% !important; /* Ajusta estos valores según sea necesario */
-    height: 46%;
+    height: 43%;
   }
   .navbar .menu {
     display: flex;
     gap: 1px !important;
     display: flex;
     align-items: center;
+    
   }
+  .navbar{
+    background: rgb(2,0,36) !important;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.548) 0%, rgba(255,182,242,1) 35%, rgba(250,209,118,1) 79%, rgba(201, 159, 68, 0.902) 100%) !important;
+  }
+
   .item {
     padding: 0px 15px !important;
   }
@@ -353,7 +369,11 @@ a {
   }
   .navbar-image {
     width: 99% !important; /* Ajusta estos valores según sea necesario */
-    height: 46%;
+    height: 43%;
+  }
+  .navbar{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.877) 0%, rgba(255,182,242,1) 35%, rgba(250,209,118,1) 79%, rgba(201, 159, 68, 0.902) 100%);
   }
   .navbar .menu {
     display: flex;
@@ -401,7 +421,7 @@ a {
 
 
 .navbar{
-    background-color: #050400;
+    background-color: #18021834;
 }
 
 @media (max-width: 436px) {
@@ -421,8 +441,7 @@ a {
       font-weight: 650 !important;
     }
     .navbar-image {
-      width: 96% !important; /* Ajusta estos valores según sea necesario */
-      height: 46%;
+      display: none;
     }
     .navbar .menu {
       display: flex;
@@ -499,7 +518,8 @@ a {
   
   
   .navbar{
-      background-color: #050400;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2, 0, 36, 0.877) 0%, rgba(255,182,242,1) 35%, rgba(250,209,118,1) 79%, rgba(201, 159, 68, 0.902) 100%);
   }
   .contact-icons {
     display: flex;
@@ -568,7 +588,7 @@ a {
   }
   
 
-  @media (max-width: 440px) {
+  @media (max-width: 575px) {
     .navbar {
         flex-direction: column;
     }
