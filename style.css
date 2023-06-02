@@ -12,40 +12,118 @@ html {
 }
 
 .header {
-  background-image: url(./img/shutterstock_1724501341.jpg);
-  height: 100vh; /* Esto crea un header que ocupa todo el alto de la pantalla */
-  background-size: cover; /* Esto hace que la imagen de fondo cubra todo el header */
-  position: relative; /* Esto permite posicionar el navbar respecto al header */
-  color: #fff; /* Cambia el color del texto de los links a blanco */
-  text-decoration: none;
+  position: relative;
+  height: 100vh;
+  color: #be1414 !important;
+  text-decoration: none !important;
+  background-size: cover;
+  animation: slider 15s infinite;
 }
+
+@keyframes slider {
+  0% {background-image: url("./img/1.jpg");}
+  20% {background-image: url("./img/1.jpg");}
+  25% {background-image: url("./img/2.jpg");}
+  45% {background-image: url("./img/2.jpg");}
+  50% {background-image: url("./img/3.jpg");}
+  70% {background-image: url("./img/3.jpg");}
+  75% {background-image: url("./img/5.jpg");}
+  95% {background-image: url("./img/6.jpg");}
+  100% {background-image: url("./img/6.jpg");}
+}
+
+ 
 a {
-  text-decoration: none !important; /* Elimina el subrayado de los links */
-  color: #050400; /* Cambia el color del texto de los links a dorado cuando se pasa el mouse por encima */
+  /* Elimina el subrayado de los links */
+  color: #c7ab3a; /* Cambia el color del texto de los links a dorado cuando se pasa el mouse por encima */
 }
+
+.menu {
+  position: fixed;
+  color: #0a0a08;
+  z-index: 1;
+  padding: 0rem;
+}
+
 .navbar-image {
   content: "";
   position: fixed;
-  top: 0; /* Cambia 'bottom' por 'top' */
+  top: -8rem !important;
   left: 0;
-  right: 0px;
-  top: -290px;
-  width: 47%; /* Cambia '900px' por '100%' para que la imagen ocupe todo el ancho del navbar */
-  height: 50%; /* Cambia '120px' por '100%' para que la imagen ocupe todo el alto del navbar */
+  right: 0;
   background-image: url("./img/navbar.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 75rem 18rem !important;
   background-position: left top;
-  z-index: -1; /* Esto coloca la imagen debajo del navbar */
+  width: 100% !important;
+  height: 20% !important;
   opacity: 0.28;
-  filter: blur(0.1px); /* Ajusta el valor para el efecto de desenfoque */
+  filter: blur(0.7rem);
+  margin-top: 0px !important;
+  background-color: #f5edf41e;
+  height: 34%;
+  z-index: 2;
+}
+.navbar {
+  border: 7px solid rgb(0, 0, 0);
+
+  /*     background-image: url("/img/navbar.png");
+  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  height: 8%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #b62929;
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
+.navbar .item {
+  margin-bottom: 10px;
+  font-size: 2rem; /* Ajusta esto al tamaño que prefieras */
+  color: #010411f6;
+  font-weight: 500;
+  padding: 1.4rem;
+  z-index: 9999;
+}
 
-.m {
-  color: rgb(230, 88, 154) !important;
-  font-weight: 1000;
-  padding: 50px;
+.navbar {
+  width: 100%;
+  background: rgba(250, 94, 229, 0.979);
+  background: linear-gradient(
+    90deg,
+    #eee9ede3 0%,
+    rgb(240, 174, 231) 35%,
+    rgba(253, 133, 207, 0.932) 75%,
+    rgba(252, 242, 250, 0.856) 100%
+  );
+}
+#m {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 10, 132) !important;
+  margin-right: 1rem;
+}
+
+#i {
+  transition: background-color 0.5s ease !important;
+}
+
+#i:hover {
+  background-color: red !important;
+  color: white !important; /* Cambia el color del texto a blanco cuando el mouse está encima */
 }
 
 .navbar a {
@@ -67,11 +145,11 @@ a {
   position: absolute;
   left: 4.4%;
   bottom: 250px;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.021);
-  color: #fff;
-  height: 54%;
-  width: 750px; /* Este es un ancho fijo. Puedes ajustarlo a tu gusto. */
+  padding: 30px;
+  background: rgba(10, 10, 10, 0.11);
+  color: #fffffffd;
+  height: 59%;
+  width: 40%; /* Este es un ancho fijo. Puedes ajustarlo a tu gusto. */
   max-width: 80%; /* Esto permitirá que la caja de texto se ajuste a pantallas más pequeñas */
 }
 
@@ -80,7 +158,10 @@ a {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  letter-spacing: 0.6em;
+  color: rgb(225, 249, 250);
 }
+
 
 .text-box p {
   font-size: 1.2em;
@@ -96,22 +177,22 @@ a {
 }
 .title {
   font-size: 40px;
-  color: rgb(230, 88, 154);
+  color: rgb(255, 10, 132) !important;
   font-weight: 1000;
   margin-bottom: 40px;
 }
-.text-box h1 {
-  letter-spacing: 0.6em; /* Espaciado para PROMAKEUP */
-  color: rgb(225, 249, 250);
-}
+
+
 
 .text-box .title {
+  letter-spacing: 0.6em; /* Espaciado para PROMAKEUP */
+  color: rgb(248, 146, 209);
   letter-spacing: 0.5em; /* Espaciado mayor para STUDIO */
 }
 .btn {
   color: rgb(15, 15, 15);
-  background-color: rgb(230, 88, 154) !important;
-  top: 3%;
+  background-color: rgb(255, 10, 132) !important;
+  top: 0%;
   padding: 8px !important;
   position: relative;
 }
@@ -126,7 +207,9 @@ a {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%); /* Centra el contenedor de los iconos en la página */
+  transform: translateX(
+    -50%
+  ); /* Centra el contenedor de los iconos en la página */
 }
 .icono img {
   width: 50px; /* Reduce el tamaño de los iconos en las pantallas grandes */
@@ -136,21 +219,140 @@ a {
   margin-right: 5px !important; /* Puedes ajustar este valor para aumentar o disminuir el espacio entre los íconos */
 }
 
-@media (max-width: 2180px) {
-  .navbar-image {
-    width: 68%; /* Ajusta estos valores según sea necesario */
-    height: 36%;
-  }
+.body{
+  background-image: url("./img/fondo.jpg"); /* Reemplaza 'tu-imagen.jpg' con la ruta a tu imagen de fondo */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el cuerpo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center; /* Centra la imagen de fondo en el cuerpo */
+  background-attachment: fixed; /* Hace que el fondo no se mueva al desplazarse */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Configura el cuerpo para ocupar toda la altura de la vista */
+  width: 100%;
 }
+.bodyy{
+  background-image: url("./img/fondo2.jpg"); /* Reemplaza 'tu-imagen.jpg' con la ruta a tu imagen de fondo */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el cuerpo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center; /* Centra la imagen de fondo en el cuerpo */
+  background-attachment: fixed; /* Hace que el fondo no se mueva al desplazarse */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Configura el cuerpo para ocupar toda la altura de la vista */
+  width: 100%;
+}
+footer {
+  background: #303036;
+  color: #d3d3d3;
+  width: 100%;
+}
+
+.footer-content {
+  border: 1px solid #545454;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content h3,
+.footer-content p {
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.socials li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.socials a {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background: #343434;
+  color: #686868;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-bottom a {
+  color: #686868;
+  text-decoration: none;
+}
+
+
+.my-content {
+  background-image: url('./img/4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 35vh;
+  position: relative;
+  color: #fff;
+  background-attachment: fixed; /* Hace que el fondo no se mueva al desplazarse */
+
+}
+
+.my-text-box {
+  position: absolute;
+  left: 10%; /* puedes ajustar este valor para mover la caja de texto a lo largo del eje horizontal */
+  top: 50%; /* puedes ajustar este valor para mover la caja de texto a lo largo del eje vertical */
+  transform: translateY(-50%); /* este comando centra verticalmente el texto */
+  width: 30%; /* puedes ajustar este valor para cambiar el ancho de la caja de texto */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.my-text-box img {
+  width: 100%; /* El ancho de la imagen será el mismo que el de la caja de texto */
+  height: auto; /* El alto de la imagen se ajustará automáticamente para mantener las proporciones de la imagen */
+}
+
+.my-text-box p {
+  color: #000; /* Cambia este color al que prefieras para el texto */
+  font-size: 1em; /* Cambia este tamaño al que prefieras para el texto */
+}
+
+
+.containerr {
+  width: 50%; /* Ajusta este valor para hacer el collage más grande o más pequeño */
+  margin: 0 auto; /* Esto centra el collage en la página */
+  padding: 20px; /* Esto agrega un poco de espacio alrededor del collage */
+  background-color: white;
+}
+
+.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px; 
+}
+
+.collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+
 /* Para pantallas de hasta 1900px de ancho */
-@media (max-width: 1920px) {
-  .navbar a {
-    font-size: 1.5em;
-  }
-  .navbar-image {
-    height: 34%;
-  }
-}
+
 @media (max-width: 645px) {
   .navbar-image {
     height: 65%;
@@ -214,21 +416,21 @@ a {
   .navbar-toggler-container {
     width: 100%; /* se asegura de que el contenedor ocupe todo el ancho posible */
     text-align: center !important; /* centra el contenido del contenedor */
- }
- .navbar {
-  display: flex;
-  justify-content: center;
-  width: 100% !important;
-  height: 5rem !important;
-}
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    height: 5rem !important;
+  }
 
-.navbar-toggler-container {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-  
-  width: 100%;
-}
+  .navbar-toggler-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+    width: 100%;
+  }
   .navbar .menu .item {
     font-size: 0.8rem; /* Ajusta esto al tamaño que prefieras */
   }
@@ -246,216 +448,9 @@ a {
       rgba(211, 165, 65, 0.904) 1000%
     );
   }
-  }
-
-
-
-@media (max-width: 1580px) {
-  .navbar {
-    width: 100% !important;
-  }
-}
-@media (max-width: 1200px) {
-  .navbar a {
-    font-size: 1.5em;
-  }
-  .navbar-image {
-    width: 80%;
-    height: 62%;
-  }
 }
 
-@media (max-width: 1502px) and (min-height: 1080px) {
-  .navbar a {
-    font-size: 1.5em;
-  }
-  .navbar-image {
-    width: 80%;
-    height: 52%;
-  }
-}
 
-@media (max-width: 2500px) and (min-height: 850px) {
-  .navbar-image {
-    height: 42%;
-    width: 98%;
-  }
-}
-@media (max-width: 2000px) and (min-height: 1000px) {
-  .navbar-image {
-    height: 35%;
-    width: 90%;
-  }
-}
-@media (max-width: 1501px) and (min-height: 1203px) {
-  .navbar a {
-    font-size: 1.5em;
-  }
-  .navbar-image {
-    width: 80%;
-    height: 32%;
-  }
-}
-@media (max-width: 1401px) and (min-height: 1202px) {
-  /* Muestra el botón hamburguesa */
-  .menu {
-    padding: 25px 1px;
-    font-size: 18px;
-    font-weight: 650;
-  }
-  .navbar {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos dentro del navbar */
-    justify-content: space-between; /* Alinea horizontalmente los elementos dentro del navbar */
-  } /* Tus otros estilos aquí */
-
-  .navbar-image {
-    height: 41%;
-    width: 98%;
-  }
-}
-@media (max-width: 1300px) and (min-height: 1201px) {
-  /* Muestra el botón hamburguesa */
-  .menu {
-    padding: 25px 1px;
-    font-size: 18px;
-    font-weight: 650;
-  }
-
-  .navbar-image {
-    height: 31%;
-    width: 98%;
-  }
-  .navbar {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos dentro del navbar */
-    justify-content: space-between; /* Alinea horizontalmente los elementos dentro del navbar */
-    /* Tus otros estilos aquí */
-  }
-
-  .navbar-image {
-    flex: 1; /* Esto permite que la imagen se flexibilice junto con los otros elementos del navbar */
-    height: 41%;
-    width: 98%;
-    background-image: url("./img/navbar.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left top;
-    /* Tus otros estilos aquí */
-  }
-  .navbar .menu {
-    display: flex;
-    gap: 6px;
-    display: flex;
-    align-items: center;
-  }
-}
-@media (max-width: 1200px) and (min-height: 1200px) {
-  /* Muestra el botón hamburguesa */
-  .menu {
-    padding: 5px;
-    font-size: 13px;
-    font-weight: 350;
-  }
-  .navbar {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos dentro del navbar */
-    justify-content: space-between; /* Alinea horizontalmente los elementos dentro del navbar */
-    /* Tus otros estilos aquí */
-  }
-
-  .navbar-image {
-    flex: 1; /* Esto permite que la imagen se flexibilice junto con los otros elementos del navbar */
-    height: 40%;
-    width: 100%;
-    background-image: url("./img/navbar.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left top;
-    /* Tus otros estilos aquí */
-  }
-  .navbar .menu {
-    height: 4.6rem;
-    display: flex;
-    gap: 6px;
-    display: flex;
-    align-items: center;
-  }
-}
-
-@media (max-width: 1450px) and (min-height: 768px) {
-  .navbar-image {
-    height: 46%;
-    width: 90%;
-  }
-}
-
-@media (max-width: 1000px) and (min-height: 700px) {
-  .navbar-image {
-    height: 35%;
-    width: 80%;
-  }
-  .navbar {
-    font-size: 0.7rem;
-  }
-}
-.navbar {
-  width: 82.1%;
-  background: rgba(247, 182, 6, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(46, 3, 39, 0.993) 0%,
-    rgba(255, 182, 242, 1) 35%,
-    rgba(250, 208, 118, 0.747) 79%,
-    rgba(211, 165, 65, 0.904) 1000%
-  );
-}
-footer {
-  background-color: #333; /* o el color que desees */
-  padding: 20px 0; /* esto hace que el pie de página sea "angosto" */
-  text-align: center; /* esto centra los iconos */
-}
-
-.footer-icons a {
-  margin: 0 10px; /* esto agrega un pequeño espacio entre los iconos */
-}
-
-.footer-icons img {
-  width: 30px; /* ajusta esto al tamaño deseado para los iconos */
-  height: auto;
-}
-.navbar {
-  /*     background-image: url("/img/navbar.png");
-  */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  padding-top: 10px;
-  height: 8%;
-  width: 100%;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 20px;
-  box-sizing: border-box;
-  color: #b62929;
-  font-size: 1.2em;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-}
-@media (max-width: 1600px) and (min-height: 800px) {
-  .navbar-image {
-    height: 40%;
-    width: 80%;
-  }
-  .navbar {
-    font-size: 0.7rem;
-  }
-}
 @media (max-width: 600px) and (min-height: 640px) {
   .navbar-image {
     height: 40%;
@@ -464,17 +459,17 @@ footer {
   .navbar {
     font-size: 0.7rem;
   }
-  .text-box{
+  .text-box {
     font-size: 0.4rem;
     padding: 2rem;
   }
-  #t2{
+  #t2 {
     font-size: 1.2rem;
   }
   .footer-icons a {
     margin: 0 px; /* esto agrega un pequeño espacio entre los iconos */
   }
-  
+
   .footer-icons img {
     width: 1rem; /* ajusta esto al tamaño deseado para los iconos */
     height: auto;
@@ -485,20 +480,19 @@ footer {
     padding: 20px 0;
     text-align: center;
   }
-  
+
   .contact-icons {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
   }
-  
+
   .icono {
     margin: 0 10px;
   }
-  
+
   .icono img {
     width: 50px; /* Cambia el tamaño según lo que necesites */
   }
-  
 }
