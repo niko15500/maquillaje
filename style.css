@@ -17,9 +17,9 @@ html {
   background-size: cover; /* Esto hace que la imagen de fondo cubra todo el header */
   position: relative; /* Esto permite posicionar el navbar respecto al header */
   color: #fff; /* Cambia el color del texto de los links a blanco */
-  text-decoration: none ;
+  text-decoration: none;
 }
- a{
+a {
   text-decoration: none !important; /* Elimina el subrayado de los links */
   color: #050400; /* Cambia el color del texto de los links a dorado cuando se pasa el mouse por encima */
 }
@@ -41,28 +41,7 @@ html {
   filter: blur(0.1px); /* Ajusta el valor para el efecto de desenfoque */
 }
 
-.navbar {
-  /*     background-image: url("/img/navbar.png");
-  */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 10px;
-  width: 100%;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 20px;
-  box-sizing: border-box;
-  color: #b62929;
-  font-size: 1.2em;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-}
+
 .m {
   color: rgb(230, 88, 154) !important;
   font-weight: 1000;
@@ -136,6 +115,26 @@ html {
   padding: 8px !important;
   position: relative;
 }
+.p {
+  font-size: 20px !important;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Puedes ajustar este valor para aumentar o disminuir el espacio entre los íconos */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centra el contenedor de los iconos en la página */
+}
+.icono img {
+  width: 50px; /* Reduce el tamaño de los iconos en las pantallas grandes */
+  height: auto;
+}
+.icono {
+  margin-right: 5px !important; /* Puedes ajustar este valor para aumentar o disminuir el espacio entre los íconos */
+}
 
 @media (max-width: 2180px) {
   .navbar-image {
@@ -152,6 +151,119 @@ html {
     height: 34%;
   }
 }
+@media (max-width: 645px) {
+  .navbar-image {
+    height: 65%;
+    width: 98%;
+  }
+  #t2 {
+    font-size: 25px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  .text-box {
+    font-size: 13px;
+    padding: 1rem;
+    font-weight: 300;
+  }
+  .title-h2 {
+    font-size: 15px;
+    padding: 0px;
+  }
+}
+@media (max-width: 476px) {
+  .text-box {
+    top: 100px;
+    font-size: 0.5rem;
+  }
+  .p {
+    margin: 0rem;
+  }
+  .navbar-image {
+    height: 75%;
+    width: 100%;
+  }
+  .btn {
+    top: -1.8rem;
+    left: 8rem;
+    padding: 0rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 414px) {
+  .text-box {
+    top: 100px;
+    font-size: 0.4rem;
+  }
+  .p {
+    font-size: 0.4rem;
+    margin: 0rem;
+  }
+  .navbar-image {
+    height: 75%;
+    width: 100%;
+  }
+  .btn {
+    top: 0.8rem;
+    left: 8rem;
+    padding: 0rem;
+    position: relative;
+  }
+  .navbar-toggler-container {
+    width: 100%; /* se asegura de que el contenedor ocupe todo el ancho posible */
+    text-align: center !important; /* centra el contenido del contenedor */
+ }
+ .navbar {
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+  height: 5rem !important;
+}
+
+.navbar-toggler-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  
+  width: 100%;
+}
+  .navbar .menu .item {
+    font-size: 0.8rem; /* Ajusta esto al tamaño que prefieras */
+  }
+
+  .navbar .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* esto centra los elementos en el eje vertical */
+    background: rgba(247, 182, 6, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(46, 3, 39, 0.993) 0%,
+      rgba(255, 182, 242, 1) 35%,
+      rgba(250, 208, 118, 0.747) 79%,
+      rgba(211, 165, 65, 0.904) 1000%
+    );
+  }
+  }
+
+
+
+@media (max-width: 1580px) {
+  .navbar {
+    width: 100% !important;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar a {
+    font-size: 1.5em;
+  }
+  .navbar-image {
+    width: 80%;
+    height: 62%;
+  }
+}
 
 @media (max-width: 1502px) and (min-height: 1080px) {
   .navbar a {
@@ -163,6 +275,18 @@ html {
   }
 }
 
+@media (max-width: 2500px) and (min-height: 850px) {
+  .navbar-image {
+    height: 42%;
+    width: 98%;
+  }
+}
+@media (max-width: 2000px) and (min-height: 1000px) {
+  .navbar-image {
+    height: 35%;
+    width: 90%;
+  }
+}
 @media (max-width: 1501px) and (min-height: 1203px) {
   .navbar a {
     font-size: 1.5em;
@@ -170,15 +294,6 @@ html {
   .navbar-image {
     width: 80%;
     height: 32%;
-  }
-}
-@media (max-width: 1200px) {
-  .navbar a {
-    font-size: 1.5em;
-  }
-  .navbar-image {
-    width: 80%;
-    height: 62%;
   }
 }
 @media (max-width: 1401px) and (min-height: 1202px) {
@@ -235,113 +350,6 @@ html {
     align-items: center;
   }
 }
-@media (max-width: 645px) {
-  
-  .navbar-image {
-    height: 65%;
-    width: 98%;
-  }
-  #t2 {
-    font-size: 25px;
-    margin: 0px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-  }
-  .text-box {
-    font-size: 13px;
-    padding: 1rem;
-    font-weight: 300;
-  }
-  .title-h2 {
-    font-size: 15px;
-    padding: 0px;
-  }
-}
-@media (max-width: 476px) {
-  .text-box {
-    top: 100px;
-    font-size: 0.5rem;
-    
-  }
-  .p{
-    margin: 0rem;
-  }
-  .navbar-image {
-    height: 75%;
-    width: 100%;
-  }
-  .btn{
-   top: -1.8rem;
-   left: 8rem;
-   padding: 0rem;
-   position: relative;
-  }
-}
-@media (max-width: 414px) {
-  .text-box {
-    top: 100px;
-    font-size: 0.4rem;
-    
-  }
-  .p{
-    font-size: 0.4rem;
-    margin: 0rem;
-  }
-  .navbar-image {
-    height: 75%;
-    width: 100% ;
-  }
-  .btn{
-   top: 0.8rem;
-   left: 8rem;
-   padding: 0rem;
-   position: relative;
-  }
-  .navbar{
-    width: 100% !important;
-  }
-}
-
-
-@media (max-width: 1580px) {
-  .navbar{
-    width: 100% !important;
-  }
-}
-
-
-
-.p {
-  font-size: 20px !important;
-}
-@media (max-width: 2500px) and (min-height: 850px) {
-  .navbar-image {
-    height: 42%;
-    width: 98%;
-  }
-}
-@media (max-width: 1350px) and (min-height: 768px) {
-  .navbar-image {
-    height: 48% ;
-    width: 90% ;
-  }
-}
-
-@media (max-width: 1000px) and (min-height: 700px) {
-  .navbar-image {
-    height: 35% ;
-    width: 80% ;
-  }
-  .navbar{
-    font-size: 0.7rem;
-  }
-}
-@media (max-width: 2000px) and (min-height: 1000px) {
-  .navbar-image {
-    height: 35% ;
-    width: 90% ;
-  }
-}
 @media (max-width: 1200px) and (min-height: 1200px) {
   /* Muestra el botón hamburguesa */
   .menu {
@@ -375,6 +383,22 @@ html {
   }
 }
 
+@media (max-width: 1450px) and (min-height: 768px) {
+  .navbar-image {
+    height: 46%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) and (min-height: 700px) {
+  .navbar-image {
+    height: 35%;
+    width: 80%;
+  }
+  .navbar {
+    font-size: 0.7rem;
+  }
+}
 .navbar {
   width: 82.1%;
   background: rgba(247, 182, 6, 0);
@@ -385,4 +409,96 @@ html {
     rgba(250, 208, 118, 0.747) 79%,
     rgba(211, 165, 65, 0.904) 1000%
   );
+}
+footer {
+  background-color: #333; /* o el color que desees */
+  padding: 20px 0; /* esto hace que el pie de página sea "angosto" */
+  text-align: center; /* esto centra los iconos */
+}
+
+.footer-icons a {
+  margin: 0 10px; /* esto agrega un pequeño espacio entre los iconos */
+}
+
+.footer-icons img {
+  width: 30px; /* ajusta esto al tamaño deseado para los iconos */
+  height: auto;
+}
+.navbar {
+  /*     background-image: url("/img/navbar.png");
+  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  height: 8%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #b62929;
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+@media (max-width: 1600px) and (min-height: 800px) {
+  .navbar-image {
+    height: 40%;
+    width: 80%;
+  }
+  .navbar {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 600px) and (min-height: 640px) {
+  .navbar-image {
+    height: 40%;
+    width: 80%;
+  }
+  .navbar {
+    font-size: 0.7rem;
+  }
+  .text-box{
+    font-size: 0.4rem;
+    padding: 2rem;
+  }
+  #t2{
+    font-size: 1.2rem;
+  }
+  .footer-icons a {
+    margin: 0 px; /* esto agrega un pequeño espacio entre los iconos */
+  }
+  
+  .footer-icons img {
+    width: 1rem; /* ajusta esto al tamaño deseado para los iconos */
+    height: auto;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .contact-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icono {
+    margin: 0 10px;
+  }
+  
+  .icono img {
+    width: 50px; /* Cambia el tamaño según lo que necesites */
+  }
+  
 }
