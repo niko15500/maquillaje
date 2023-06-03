@@ -14,8 +14,7 @@ html {
 .header {
   position: relative;
   height: 100vh;
-  color: #be1414 !important;
-  text-decoration: none !important;
+  color: #f3f0f0 !important;
   background-size: cover;
   animation: slider 15s infinite;
 }
@@ -49,23 +48,22 @@ a {
   content: "";
   position: fixed;
   top: -8rem !important;
-  left: 0;
+  left: 17rem;
   right: 0;
   background-image: url("./img/navbar.png");
   background-repeat: no-repeat;
-  background-size: 75rem 18rem !important;
+  background-size: 85rem 18rem !important;
   background-position: left top;
   width: 100% !important;
   height: 20% !important;
   opacity: 0.28;
-  filter: blur(0.7rem);
+  filter: blur(1rem);
   margin-top: 0px !important;
   background-color: #f5edf41e;
   height: 34%;
-  z-index: 2;
 }
 .navbar {
-  border: 7px solid rgb(0, 0, 0);
+  border: 0px solid rgb(0, 0, 0);
 
   /*     background-image: url("/img/navbar.png");
   */
@@ -75,13 +73,13 @@ a {
   position: fixed !important;
   top: 0;
   left: 0;
-  padding-top: 10px;
+  padding-top: 0px;
   height: 8%;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center !important;
   padding: 20px;
   box-sizing: border-box;
   color: #b62929;
@@ -91,22 +89,45 @@ a {
 }
 
 .navbar .item {
-  margin-bottom: 10px;
   font-size: 2rem; /* Ajusta esto al tamaño que prefieras */
   color: #010411f6;
-  font-weight: 500;
-  padding: 1.4rem;
+  font-weight: 00;
   z-index: 9999;
+  
+}
+#i {
+  transition: background-color 0.5s ease !important;
 }
 
+#i:hover {
+  background-color: rgb(46, 30, 30) !important;
+  color: white !important; /* Cambia el color del texto a blanco cuando el mouse está encima */
+}
+
+.navbar a {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.8em;
+  text-decoration: none !important;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .navbar {
+  z-index: 3 !important;
+
   width: 100%;
-  background: rgba(250, 94, 229, 0.979);
+  background: rgba(228, 227, 228, 0.979);
   background: linear-gradient(
     90deg,
-    #eee9ede3 0%,
-    rgb(240, 174, 231) 35%,
-    rgba(253, 133, 207, 0.932) 75%,
+    hsla(300, 33%, 99%, 0.89) 0%,
+    rgba(253, 133, 207, 0.932) 35%,
+    rgba(248, 152, 211, 0.932) 75%,
     rgba(252, 242, 250, 0.856) 100%
   );
 }
@@ -117,29 +138,38 @@ a {
   margin-right: 1rem;
 }
 
-#i {
-  transition: background-color 0.5s ease !important;
+@keyframes girar {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
-#i:hover {
-  background-color: red !important;
-  color: white !important; /* Cambia el color del texto a blanco cuando el mouse está encima */
+.card {
+  animation: girar 2s ease-out;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  perspective: 1000px;
 }
 
-.navbar a {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 1.8em;
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s ease;
+.card:hover {
+  transform: scale(1.2);
 }
 
-.navbar .menu {
+
+.containerr {
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
   display: flex;
-  gap: 10px;
-  align-items: center;
+  justify-content: space-around;
 }
+
+
+
+
+
 
 .text-box {
   position: absolute;
@@ -196,6 +226,14 @@ a {
   padding: 8px !important;
   position: relative;
 }
+.btnn {
+  color: rgb(214, 205, 205);
+  background-color: rgb(10, 10, 10) !important;
+  top: 0%;
+  padding: 10px !important;
+  position: relative;
+  width: 7rem;
+}
 .p {
   font-size: 20px !important;
 }
@@ -219,28 +257,79 @@ a {
   margin-right: 5px !important; /* Puedes ajustar este valor para aumentar o disminuir el espacio entre los íconos */
 }
 
-.body{
-  background-image: url("./img/fondo.jpg"); /* Reemplaza 'tu-imagen.jpg' con la ruta a tu imagen de fondo */
-  background-size: cover; /* Asegura que la imagen de fondo cubra todo el cuerpo */
-  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-  background-position: center; /* Centra la imagen de fondo en el cuerpo */
-  background-attachment: fixed; /* Hace que el fondo no se mueva al desplazarse */
+.body {
+  background-image: url("./img/fondo3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
-  height: 100vh; /* Configura el cuerpo para ocupar toda la altura de la vista */
+  height: 100vh;
   width: 100%;
+  display: flex; /* Agrega flexbox para alinear el contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
 }
-.bodyy{
-  background-image: url("./img/fondo2.jpg"); /* Reemplaza 'tu-imagen.jpg' con la ruta a tu imagen de fondo */
-  background-size: cover; /* Asegura que la imagen de fondo cubra todo el cuerpo */
-  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-  background-position: center; /* Centra la imagen de fondo en el cuerpo */
-  background-attachment: fixed; /* Hace que el fondo no se mueva al desplazarse */
+
+.overlay-content {
+  display: flex; /* Usa flexbox para alinear la imagen y el cuadro de texto */
+  gap: 10rem; /* Agrega espacio entre la imagen y el cuadro de texto */
+  align-items: center;
+  margin-right: 10rem ;
+}
+
+.overlay-content img {
+  
+  width: 30%; /* Hace que la imagen ocupe el 30% del ancho del cuerpo */
+  object-fit: cover; /* Asegura que la imagen cubra todo su espacio asignado */
+}
+
+.texttt-box {
+  background-color: rgba(255, 255, 255, 0.8); /* Agrega un fondo blanco semi-transparente al cuadro de texto */
+  padding: 20px; /* Agrega un poco de espacio alrededor del texto */
+  width: 70%; /* Hace que el cuadro de texto ocupe el 70% restante del ancho del cuerpo */
+}
+
+
+
+
+
+.bodyy {
+  background-image: url("./img/fondo4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
-  height: 100vh; /* Configura el cuerpo para ocupar toda la altura de la vista */
+  height: 100vh;
   width: 100%;
+  position: relative; /* Agrega esta línea para posicionar los elementos hijo en relación a este elemento */
 }
+
+.overlayy {
+  position: absolute;
+  top: 50%; /* Esto coloca la div a un 70% de la parte superior de la imagen de fondo */
+  left: 1;
+  right: 0;
+  display: flex; /* Usa flexbox para alinear la imagen y el cuadro de texto */
+  gap: 10rem; /* Agrega espacio entre la imagen y el cuadro de texto */
+  margin-right: 35rem;
+  align-items: center;
+}
+
+.overlayy-img {
+  
+  width: 10%; /* Hace que la imagen ocupe el 30% del ancho del cuerpo */
+  object-fit: cover; /* Asegura que la imagen cubra todo su espacio asignado */
+}
+
+.overlayy-text {
+  background-color: rgba(255, 255, 255, 0.8); /* Agrega un fondo blanco semi-transparente al cuadro de texto */
+  padding: 20px; /* Agrega un poco de espacio alrededor del texto */
+  width: 70%; /* Hace que el cuadro de texto ocupe el 70% restante del ancho del cuerpo */}
+
 footer {
   background: #303036;
   color: #d3d3d3;
@@ -295,7 +384,7 @@ footer {
 
 
 .my-content {
-  background-image: url('./img/4.jpg');
+  background-image: url('./img/44.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
