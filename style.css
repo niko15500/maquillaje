@@ -141,7 +141,6 @@ a {
   color: rgb(255, 10, 132) !important;
   margin-right: 1rem;
   font-weight: 1000;
-
 }
 
 @keyframes girar {
@@ -466,7 +465,7 @@ footer {
   height: auto ;
 }
 #whatsapp-button img {
-  width: 8vh; /* Ajusta este valor a tu gusto */
+  width: 7vh; /* Ajusta este valor a tu gusto */
   height: 5vh; 
 }
 #back-to-top {
@@ -480,6 +479,94 @@ footer {
     height: 5vh;
     border: none;
 }
+
+
+
+
+.containerr {
+  margin: 0 auto;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousell {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.itemm {
+  display: block;
+  position: absolute;
+  background: #000;
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 0em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.95;
+  border-radius: 10px;
+}
+.itemm img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del elemento que la contiene */
+  height: 100%; /* Ajusta la altura de la imagen al 100% del elemento que la contiene */
+  object-fit: cover; /* Asegura que la imagen cubra todo el elemento, cortándola si es necesario */
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(250px);
+  background: #ed1c24;
+}
+.b {
+  transform: rotateY(60deg) translateZ(250px);
+  background: #0072bc;
+}
+.c {
+  transform: rotateY(120deg) translateZ(250px);
+  background: #39b54a;
+}
+.d {
+  transform: rotateY(180deg) translateZ(250px);
+  background: #f26522;
+}
+.e {
+  transform: rotateY(240deg) translateZ(250px);
+  background: #630460;
+} 
+.f {
+  transform: rotateY(300deg) translateZ(250px);
+  background: #8c6239;
+}
+
+.next, .prev {
+  color: #444;
+  position: absolute;
+  top: 122vh;
+  padding: 1em 2em;
+  background: #fce3fd;
+  border-radius: 5px;
+  border-top: 1px solid #FFF;
+  box-shadow: 0 5px 0 #c5bbc5;
+  transition: box-shadow 0.1s, top 0.01s;
+}
+.next img, .prev img {
+  width: 50px; /* Cambia este valor para ajustar el tamaño de las imágenes de las flechas */
+  height: 50px; /* Cambia este valor para ajustar el tamaño de las imágenes de las flechas */
+}
+.next:hover, .prev:hover { color: #000; }
+.next:active, .prev:active {
+  top: 104px;
+  box-shadow: 0 1px 0 #999;
+}
+.next { right: 5em; }
+.prev { left: 5em; }
+
+
 
 /* Para pantallas de hasta 1900px de ancho */
 
