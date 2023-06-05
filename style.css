@@ -52,15 +52,14 @@ a {
   right: 0;
   background-image: url("./img/navbar.png");
   background-repeat: no-repeat;
-  background-size: 85rem 18rem !important;
+  background-size: 85rem 16rem !important;
   background-position: left top;
   width: 100% !important;
-  height: 20% !important;
   opacity: 0.28;
   filter: blur(1rem);
   margin-top: 0px !important;
   background-color: #f5edf41e;
-  height: 34%;
+  height: 35%;
 }
 .navbar {
   border: 0px solid rgb(0, 0, 0);
@@ -74,7 +73,7 @@ a {
   top: 0;
   left: 0;
   padding-top: 0px;
-  height: 8%;
+  height: 9.4%;
   width: 100%;
   z-index: 3;
   display: flex;
@@ -437,8 +436,46 @@ footer {
   height: 100%;
   object-fit: cover; 
 }
-
-
+#logo img{
+  position: fixed;
+  width: 15vh;
+  min-width: 50px;  /* Ajusta este valor según tus necesidades */
+  height: auto;
+  top: 0;
+  left: -0rem;
+  margin-left: 0rem;
+}
+#whatsapp-button {
+  position: fixed; /* Esto permite posicionar el botón independientemente del flujo del documento */
+  left: 20px; /* Ajusta este valor para mover el botón a la izquierda o a la derecha */
+  bottom: 100px; /* Ajusta este valor para mover el botón hacia arriba o hacia abajo */
+  z-index: 9999; /* Esto asegura que el botón esté por encima de los otros elementos */
+  width: 10px !important;
+  height: auto !important;
+}
+#whatsapp-button {
+  position: fixed; /* Esto permite posicionar el botón independientemente del flujo del documento */
+  left: 20px; /* Ajusta este valor para mover el botón a la izquierda o a la derecha */
+  bottom: 20px; /* Ajusta este valor para mover el botón hacia arriba o hacia abajo */
+  z-index: 9999; /* Esto asegura que el botón esté por encima de los otros elementos */
+  width: 10px !important;
+  height: auto !important;
+}
+#whatsapp-button img {
+  width: 8vh; /* Ajusta este valor a tu gusto */
+  height: 5vh; 
+}
+#back-to-top {
+  position: fixed; /* Esto permite posicionar el botón independientemente del flujo del documento */
+  right: 20px; /* Ajusta este valor para mover el botón a la izquierda o a la derecha */
+  bottom: 20px; /* Ajusta este valor para mover el botón hacia arriba o hacia abajo */
+  z-index: 9999; /* Esto asegura que el botón esté por encima de los otros elementos */
+  background: url('/img/iconos/flecha.png') no-repeat;
+    background-size: cover;
+    width: 8vh;
+    height: 5vh;
+    border: none;
+}
 
 /* Para pantallas de hasta 1900px de ancho */
 
