@@ -157,6 +157,7 @@ a {
   transform-style: preserve-3d;
   transition: transform 0.5s;
   perspective: 1000px;
+  
 }
 
 .card:hover {
@@ -164,13 +165,19 @@ a {
 }
 
 
-.containerr {
-  margin-top: 10rem !important;
-  margin-bottom: 10rem !important;
-  display: flex;
-  justify-content: space-around;
-}
 
+.containerrrr {
+  width: 50rem !important;
+  margin-top: 15rem !important;
+  margin-bottom: 10rem !important;
+  gap: 40px ;
+  display: flex ;
+  justify-content: space-between ;
+}
+.card-body{
+  padding: 1rem !important;
+
+}
 
 
 
@@ -483,10 +490,10 @@ footer {
 
 
 
-.containerr {
-  margin: 0 auto;
+.containerrr {
+  margin: 17vh auto;
   width: 250px;
-  height: 200px;
+  height: 100px;
   position: relative;
   perspective: 1000px;
 }
@@ -548,7 +555,7 @@ footer {
   position: absolute;
   top: 122vh;
   padding: 1em 2em;
-  background: #fce3fd;
+  background: #fce3fd00;
   border-radius: 5px;
   border-top: 1px solid #FFF;
   box-shadow: 0 5px 0 #c5bbc5;
