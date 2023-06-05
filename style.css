@@ -19,6 +19,12 @@ html {
   animation: slider 15s infinite;
 }
 
+#slider {
+  animation: slider 20s infinite;
+  background-size: cover;  /* Esto hará que la imagen cubra todo el espacio disponible, recortándose si es necesario */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 @keyframes slider {
   0% {background-image: url("./img/1.jpg");}
   20% {background-image: url("./img/1.jpg");}
@@ -30,7 +36,6 @@ html {
   95% {background-image: url("./img/6.jpg");}
   100% {background-image: url("./img/6.jpg");}
 }
-
  
 a {
   /* Elimina el subrayado de los links */
@@ -177,8 +182,8 @@ a {
   padding: 30px;
   background: rgba(10, 10, 10, 0.11);
   color: #fffffffd;
-  height: 59%;
-  width: 40%; /* Este es un ancho fijo. Puedes ajustarlo a tu gusto. */
+  height: auto;
+  width: 70vh; /* Este es un ancho fijo. Puedes ajustarlo a tu gusto. */
   max-width: 80%; /* Esto permitirá que la caja de texto se ajuste a pantallas más pequeñas */
 }
 
@@ -445,21 +450,14 @@ footer {
   left: -0rem;
   margin-left: 0rem;
 }
-#whatsapp-button {
-  position: fixed; /* Esto permite posicionar el botón independientemente del flujo del documento */
-  left: 20px; /* Ajusta este valor para mover el botón a la izquierda o a la derecha */
-  bottom: 100px; /* Ajusta este valor para mover el botón hacia arriba o hacia abajo */
-  z-index: 9999; /* Esto asegura que el botón esté por encima de los otros elementos */
-  width: 10px !important;
-  height: auto !important;
-}
+
 #whatsapp-button {
   position: fixed; /* Esto permite posicionar el botón independientemente del flujo del documento */
   left: 20px; /* Ajusta este valor para mover el botón a la izquierda o a la derecha */
   bottom: 20px; /* Ajusta este valor para mover el botón hacia arriba o hacia abajo */
   z-index: 9999; /* Esto asegura que el botón esté por encima de los otros elementos */
-  width: 10px !important;
-  height: auto !important;
+  width: 10px ;
+  height: auto ;
 }
 #whatsapp-button img {
   width: 8vh; /* Ajusta este valor a tu gusto */
