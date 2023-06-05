@@ -375,7 +375,9 @@ footer {
   list-style: none;
   padding: 0 10px;
 }
-
+.socials i {
+  font-size: 34px; /* Cambia este valor para ajustar el tamaño de los íconos */
+}
 .socials a {
   color: #d3d3d3;
   text-decoration: none;
@@ -492,8 +494,8 @@ footer {
 
 .containerrr {
   margin: 17vh auto;
-  width: 250px;
-  height: 100px;
+  width: 400px;
+  height: 300px;
   position: relative;
   perspective: 1000px;
 }
@@ -510,8 +512,8 @@ footer {
   display: block;
   position: absolute;
   background: #000;
-  width: 250px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   line-height: 200px;
   font-size: 0em;
   text-align: center;
@@ -526,34 +528,34 @@ footer {
 }
 
 .a {
-  transform: rotateY(0deg) translateZ(250px);
+  transform: rotateY(0deg) translateZ(400px);
   background: #ed1c24;
 }
 .b {
-  transform: rotateY(60deg) translateZ(250px);
+  transform: rotateY(60deg) translateZ(400px);
   background: #0072bc;
 }
 .c {
-  transform: rotateY(120deg) translateZ(250px);
+  transform: rotateY(120deg) translateZ(400px);
   background: #39b54a;
 }
 .d {
-  transform: rotateY(180deg) translateZ(250px);
+  transform: rotateY(180deg) translateZ(400px);
   background: #f26522;
 }
 .e {
-  transform: rotateY(240deg) translateZ(250px);
+  transform: rotateY(240deg) translateZ(400px);
   background: #630460;
 } 
 .f {
-  transform: rotateY(300deg) translateZ(250px);
+  transform: rotateY(300deg) translateZ(400px);
   background: #8c6239;
 }
 
 .next, .prev {
   color: #e4dada;
   position: absolute;
-  top: 122vh;
+  top: 126vh;
   padding: 1em 2em;
   background: #fffcff11;
   border-radius: 5px;
@@ -718,5 +720,110 @@ footer {
 
   .icono img {
     width: 50px; /* Cambia el tamaño según lo que necesites */
+  }
+}
+
+
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+
+
+.h11 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+.p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.headerr {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(253, 133, 207, 0.932) 0%, rgba(231, 47, 176, 0.932) 100%);
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-headerr {
+  height:25vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.contentt {
+  position:relative;
+  height:10vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .contentt {
+    height:30vh;
+  }
+  .h11 {
+    font-size:24px;
   }
 }
