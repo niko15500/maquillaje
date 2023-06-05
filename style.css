@@ -140,6 +140,8 @@ a {
   align-items: center;
   color: rgb(255, 10, 132) !important;
   margin-right: 1rem;
+  font-weight: 1000;
+
 }
 
 @keyframes girar {
@@ -179,11 +181,11 @@ a {
   position: absolute;
   left: 4.4%;
   bottom: 250px;
-  padding: 30px;
-  background: rgba(10, 10, 10, 0.11);
+  padding: 20px;
+  background: rgba(10, 10, 10, 0.185);
   color: #fffffffd;
   height: auto;
-  width: 70vh; /* Este es un ancho fijo. Puedes ajustarlo a tu gusto. */
+  width: 85vh; /* Este es un ancho fijo. Puedes ajustarlo a tu gusto. */
   max-width: 80%; /* Esto permitirá que la caja de texto se ajuste a pantallas más pequeñas */
 }
 
@@ -192,7 +194,7 @@ a {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.5em;
   color: rgb(225, 249, 250);
 }
 
@@ -214,6 +216,7 @@ a {
   color: rgb(255, 10, 132) !important;
   font-weight: 1000;
   margin-bottom: 40px;
+  
 }
 
 
@@ -222,6 +225,9 @@ a {
   letter-spacing: 0.6em; /* Espaciado para PROMAKEUP */
   color: rgb(248, 146, 209);
   letter-spacing: 0.5em; /* Espaciado mayor para STUDIO */
+  font-weight: 1000;
+
+
 }
 .btn {
   color: rgb(15, 15, 15);
@@ -468,7 +474,7 @@ footer {
   right: 20px; /* Ajusta este valor para mover el botón a la izquierda o a la derecha */
   bottom: 20px; /* Ajusta este valor para mover el botón hacia arriba o hacia abajo */
   z-index: 9999; /* Esto asegura que el botón esté por encima de los otros elementos */
-  background: url('/img/iconos/flecha.png') no-repeat;
+  background: url('./img/iconos/flecha.png') no-repeat;
     background-size: cover;
     width: 8vh;
     height: 5vh;
