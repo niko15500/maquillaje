@@ -551,14 +551,14 @@ footer {
 }
 
 .next, .prev {
-  color: #444;
+  color: #e4dada;
   position: absolute;
   top: 122vh;
   padding: 1em 2em;
-  background: #fce3fd00;
+  background: #fffcff11;
   border-radius: 5px;
   border-top: 1px solid #FFF;
-  box-shadow: 0 5px 0 #c5bbc5;
+  box-shadow: 0 5px 0 #857f85;
   transition: box-shadow 0.1s, top 0.01s;
 }
 .next img, .prev img {
