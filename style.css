@@ -776,7 +776,120 @@ footer {
     display: none;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 1500px) and (min-height: 900px) {
+  .text-box{
+    font-size: 16px;
+  }
+    
+  .title{
+    
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1000px) and (min-height: 1250px) {
+  .navbar{
+  }
+  .text-box{
+    height: 60vh;
+    width: 100vh;
+    font-size: 15px;
+    top: 20vh;
+  }
+  
+  .title{
+    
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .p{
+    font-size: 27px !important;
+  }
+  .item{
+    font-size: 20px !important;
+  }
+  .containerrr {
+    display: flex;
+    justify-content: center;
+    transform-origin: center !important;
+
+  }
+  
+  .carousell {
+
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .itemm {
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 200px;
+    height: 300px;
+    line-height: 200px;
+    font-size: 0em;
+    color: #FFF;
+    opacity: 0.95;
+    border-radius: 10px;
+  }
+  .itemm img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del elemento que la contiene */
+    height: 100%; /* Ajusta la altura de la imagen al 100% del elemento que la contiene */
+    object-fit: cover; /* Asegura que la imagen cubra todo el elemento, cortándola si es necesario */
+  }
+  
+  .a {
+    transform: rotateY(0deg) translateZ(200px);
+    background: #ed1c24;
+  }
+  .b {
+    transform: rotateY(60deg) translateZ(200px);
+    background: #0072bc;
+  }
+  .c {
+    transform: rotateY(120deg) translateZ(200px);
+    background: #39b54a;
+  }
+  .d {
+    transform: rotateY(180deg) translateZ(200px);
+    background: #f26522;
+  }
+  .e {
+    transform: rotateY(240deg) translateZ(200px);
+    background: #630460;
+  } 
+  .f {
+    transform: rotateY(300deg) translateZ(200px);
+    background: #8c6239;
+  }
+    
+  
+  .next, .prev {
+    color: #e4dada;
+    position: absolute;
+    top: 126vh;
+    padding: 1em 2em;
+    background: #fffcff11;
+    border-radius: 5px;
+    border-top: 1px solid #FFF;
+    box-shadow: 0 5px 0 #857f85;
+    transition: box-shadow 0.1s, top 0.01s;
+  }
+  .next img, .prev img {
+    width: 50px; /* Cambia este valor para ajustar el tamaño de las imágenes de las flechas */
+    height: 50px; /* Cambia este valor para ajustar el tamaño de las imágenes de las flechas */
+  }
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+    top: 104px;
+    box-shadow: 0 1px 0 #999;
+  }
+  .next { right: 1em; }
+  .prev { left: 1em; }
 }
 .logo {
   width:50px;
